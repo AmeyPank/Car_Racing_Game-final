@@ -34,9 +34,9 @@
             display: none;
         }
         .car{
-            width: 50px;
-            height: 70px;
-            background-color: red;
+            width: 60px;
+            height: 110px;
+            /* background-color: red; */
             position: absolute;
             bottom: 120px;
             background-image: url(Images/car.jpg);
@@ -68,6 +68,7 @@
             width: 50px;
             height: 70px;
             background-color: blue;
+            background-image: url(Images/car5.jpg);
             position: absolute;
             bottom: 120px;
         }
@@ -87,7 +88,7 @@
         } */
         .StartScreen{
             position: absolute;
-            background-color: #BFDB38;
+            background-color: #F2921D;
             color: white;
             z-index: 1;
             margin-top: 0px;
@@ -126,6 +127,9 @@
         <div class="StartScreen">
             <p>Start Game by clicking Here<br><br>Arrow Keys to move<br><br>If you hit another car you will loose</p>
             <button onclick="Reset()">Reset Highest Score</button>
+            <div class="carimage">
+                <img src="/Images/car.jpg "width="90px" height="100px"style="margin-top:100px" alt="">
+            </div>
         </div>
         <div class="GameArea">
 
