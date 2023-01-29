@@ -16,22 +16,13 @@
                 text-align: center;
                 font-family: sans-serif;
             }
-
         </style>
 </head>
 
 <body>
-    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
-        <strong>Your Form has been submitted successfully!</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    <div id="fail" class="alert alert-danger alert-dismissible fade" role="alert">
-        <strong>Your Form has not been submitted !</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
     <div class="container">
-        <h1 >Signup To Play Game</h1>
-        <form  action="/login.html" class="row g-3">
+        <h1>Signup To Play Game</h1>
+        <form action="/asset/login.html" class="row g-3" method = "get">
             <div class="col-md-4">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control is-invalid" id="name" required>
@@ -64,7 +55,7 @@
 
 
             <div class="col-12" style="text-align: center;">
-                <button class="btn btn-primary" type="submit" id="submit">Submit form</button>
+                <button class="btn btn-primary" type="submit"  id="submit"onclick="auth()" >Submit form</button>
             </div>
         </form>
     </div>
@@ -161,6 +152,10 @@ let submit= document.getElementById('submit');
 
 
     });
+    function auth(){
+        window.location.assign("/asset/login.html");
+        alert("Login Successfully")
+    }
     </script>
 </body>
 

@@ -39,7 +39,7 @@
             /* background-color: red; */
             position: absolute;
             bottom: 120px;
-            background-image: url(Images/car.jpg);
+            background-image: url(/Images/car.jpg);
             background-size: cover;
         }
         .GameArea{
@@ -67,8 +67,7 @@
         .other{
             width: 50px;
             height: 70px;
-            background-color: blue;
-            background-image: url(Images/car5.jpg);
+            background-color: red;
             position: absolute;
             bottom: 120px;
         }
@@ -113,7 +112,7 @@
 </head>
 <body>
     <div class="top-bar">
-        <div class="user-name">Abhishek</div>
+        <div class="user-name" id="user-name">Username</div>
         <div class="Score">
 
         </div>
@@ -125,7 +124,7 @@
 
     <div class="CarGame">
         <div class="StartScreen">
-            <p>Start Game by clicking Here<br><br>Arrow Keys to move<br><br>If you hit another car you will loose</p>
+            <p>Start Game by clicking Here<br><br>Arrow Keys to move<br><br>If you hit another  you will loose</p>
             <button onclick="Reset()">Reset Highest Score</button>
             <div class="carimage">
                 <img src="/Images/car.jpg "width="90px" height="100px"style="margin-top:100px" alt="">
@@ -134,7 +133,7 @@
         <div class="GameArea">
 
         </div>
-    </div>       
+    </div>  
     <script>
         const score=document.querySelector('.Score');
         const startscreen=document.querySelector('.StartScreen');
